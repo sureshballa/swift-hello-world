@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +14,42 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splashimage" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-c4-LG0">
+                                <rect key="frame" x="0.0" y="220" width="320" height="348"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="48k-iE-rug"/>
+                                    <constraint firstAttribute="height" constant="128" id="RBS-3L-Zc9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aIi-c4-LG0" secondAttribute="trailing" constant="40" id="7mt-4i-6ev"/>
+                            <constraint firstItem="aIi-c4-LG0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="EbJ-tD-Pet"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aIi-c4-LG0" secondAttribute="bottom" id="FFa-3F-5dV"/>
+                            <constraint firstItem="aIi-c4-LG0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NZm-VO-kPK"/>
+                            <constraint firstAttribute="trailing" secondItem="aIi-c4-LG0" secondAttribute="trailing" id="Sm4-PL-tFi"/>
+                            <constraint firstItem="aIi-c4-LG0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Tgb-it-Q8I"/>
+                            <constraint firstAttribute="trailing" secondItem="aIi-c4-LG0" secondAttribute="trailing" id="XCO-IP-Sy4"/>
+                            <constraint firstAttribute="trailing" secondItem="aIi-c4-LG0" secondAttribute="trailing" id="Xtd-DL-m9z"/>
+                            <constraint firstItem="aIi-c4-LG0" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="avy-q0-rJm"/>
+                            <constraint firstItem="aIi-c4-LG0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cbZ-zH-HTU"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aIi-c4-LG0" secondAttribute="bottom" id="d80-rl-Mns"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splashimage" width="2560" height="1600"/>
+    </resources>
 </document>
